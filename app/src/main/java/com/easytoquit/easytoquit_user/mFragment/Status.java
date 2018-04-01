@@ -58,7 +58,7 @@ public class Status extends Fragment {
             Log.e("Internal",  e.toString() );
         }
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         DatabaseReference myRef = database.getReference("usersAssessment/" + sb +"/評估資料/"+"第一次評估資料");
 
         myRef.addValueEventListener(new ValueEventListener() {

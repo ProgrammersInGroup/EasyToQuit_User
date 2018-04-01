@@ -73,7 +73,7 @@ public class Profile extends Fragment {
             Log.e("Internal",  e.toString() );
         }
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://retrievedata-d4c18.firebaseio.com/");
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         //改為用暫存檔讀取資料庫
         DatabaseReference myRef = database.getReference("users/" + sb);
         myRef.addValueEventListener(new ValueEventListener() {

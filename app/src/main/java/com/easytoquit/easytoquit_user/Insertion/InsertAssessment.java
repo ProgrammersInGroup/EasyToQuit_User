@@ -69,7 +69,7 @@ public class InsertAssessment extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.e("Internal", e.toString());
                 }
-                FirebaseDatabase database = FirebaseDatabase.getInstance("https://retrievedata-d4c18.firebaseio.com/");
+                FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
                 DatabaseReference myRef = database.getReference("usersAssessment/" + sb);
 
                 SmokeStatus smokeStatus = new SmokeStatus(edt_assessment_smoking_year.getText().toString(), edt_assessment_date_smoking.getText().toString(),

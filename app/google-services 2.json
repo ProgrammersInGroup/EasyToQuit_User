@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "27448684636",
+    "firebase_url": "https://fjutest-818c3.firebaseio.com",
+    "project_id": "fjutest-818c3",
+    "storage_bucket": "fjutest-818c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27448684636:android:06a64336c7c37cf4",
+        "android_client_info": {
+          "package_name": "com.easytoquit.easytoquit_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27448684636-o79t25ama8nac161ii7kqqi9le4dce05.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easytoquit.easytoquit_user",
+            "certificate_hash": "77dc8d10805afeecc05c7774e77404eb0b0ca6e9"
+          }
+        },
+        {
+          "client_id": "27448684636-p3rrjldh0l7i3mdrmc1d1t8l0q8gsibj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE677Fj6rb6k7syNw_iZV1GlXkz3hmbDA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27448684636-p3rrjldh0l7i3mdrmc1d1t8l0q8gsibj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

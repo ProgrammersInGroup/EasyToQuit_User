@@ -74,7 +74,7 @@ public class InsertProfile extends AppCompatActivity {
     private View.OnClickListener onclick = new View.OnClickListener() {
 
         public void onClick(View v) {
-            FirebaseDatabase database = FirebaseDatabase.getInstance("https://retrievedata-d4c18.firebaseio.com/");
+            FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
             DatabaseReference myRef = database.getReference();
 
             //加入防呆功能 所有edittext不可為空

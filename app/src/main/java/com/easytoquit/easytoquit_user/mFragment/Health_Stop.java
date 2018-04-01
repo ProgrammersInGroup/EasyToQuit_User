@@ -78,7 +78,7 @@ public class Health_Stop extends Fragment {
             Log.e("Internal",  e.toString() );
         }
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://retrievedata-d4c18.firebaseio.com/");
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         DatabaseReference myRef = database.getReference("users/" + sb + "/phone");
 
         myRef.addValueEventListener(new ValueEventListener() {

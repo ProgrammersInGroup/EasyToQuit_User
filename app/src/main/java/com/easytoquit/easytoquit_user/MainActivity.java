@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity
                 Log.e("Internal",  e.toString() );
             }
 
-            FirebaseDatabase database = FirebaseDatabase.getInstance();
+            FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
             //改為用暫存檔讀取資料庫
             DatabaseReference myRef = database.getReference("users/" + sb);
             myRef.addValueEventListener(new ValueEventListener() {
@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity
             //time.setText(minius+":"+seconds);
             if(seconds % 10 == 0){
                 Notification.showFullScreen(MainActivity.this);
-                Log.d("aa", "yaaaaa");
+                //Log.d("aa", "yaaaaa");
             }
             handler.postDelayed(this, 1000);
         }
