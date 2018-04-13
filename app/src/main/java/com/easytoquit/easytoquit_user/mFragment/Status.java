@@ -30,7 +30,7 @@ public class Status extends Fragment {
     TextView show_week_smoking;
     TextView show_date_smoking;
     TextView show_quit_smoking_date;
-    TextView show_smoking_money;
+    //TextView show_smoking_money;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class Status extends Fragment {
         show_week_smoking = (TextView)view.findViewById(R.id.show_week_smoking) ;
         show_date_smoking = (TextView)view.findViewById(R.id.show_date_smoking) ;
         show_quit_smoking_date = (TextView)view.findViewById(R.id.show_quit_smoking_date) ;
-        show_smoking_money = (TextView)view.findViewById(R.id.show_smoking_money) ;
+        //show_smoking_money = (TextView)view.findViewById(R.id.show_smoking_money) ;
         FileInputStream fis = null;
         StringBuilder sb = new StringBuilder();
         try{
@@ -73,7 +73,7 @@ public class Status extends Fragment {
                 show_week_smoking.setText(value.getsmokehowmuchweek());
                 show_date_smoking.setText(value.getsmokehowmuchday());
                 show_quit_smoking_date.setText(value.getsmokequitday());
-                show_smoking_money.setText(value.getsmokemoney());
+                //show_smoking_money.setText(value.getsmokemoney());
                 Log.d(TAG, "Value is: " + value.getsmokeage());
             }
 
