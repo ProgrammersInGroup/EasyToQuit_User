@@ -11,7 +11,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.easytoquit.easytoquit_user.Insertion.InsertProfile;
@@ -22,12 +24,18 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * Created by Polaris0712 on 13/01/2018.
@@ -43,6 +51,13 @@ public class Profile extends Fragment {
     CircleImageView profile_image;
     String BitmapString;
     Bitmap mBitmapImage;
+
+
+    ImageView image;
+    String text2Qr;
+    Bitmap bitmap;
+    public final static int QRCodeWidth = 500 ;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -54,6 +69,7 @@ public class Profile extends Fragment {
         profile_image = (CircleImageView) view.findViewById(R.id.profile_image);
         editbt = (ImageButton)view.findViewById(R.id.imageButton);
         editbt.setOnClickListener(onclick);
+        image = (ImageView)view.findViewById(R.id.iv);
 
         //讀出檔案
         FileInputStream fis = null;
@@ -96,6 +112,19 @@ public class Profile extends Fragment {
                 Bitmap scaled = Bitmap.createScaledBitmap(mBitmapImage, 512, nh, true);
                 profile_image.setImageBitmap(scaled);
                 Log.d(TAG, "Value is: " + value.getName());
+
+                text2Qr = value.getPhone();
+                //text2Qr = "0935901509";
+                Log.d(TAG, "Phone: " + text2Qr);
+                try {
+                    bitmap = TextToImageEncode(text2Qr);
+
+                    image.setImageBitmap(bitmap);
+
+                } catch (WriterException e) {
+                    e.printStackTrace();
+                }
+
             }
 
             @Override
@@ -135,5 +164,38 @@ public class Profile extends Fragment {
         return bmp;
 
 
+    }
+    Bitmap TextToImageEncode(String Value) throws WriterException {
+        BitMatrix bitMatrix;
+        try {
+            bitMatrix = new MultiFormatWriter().encode(
+                    Value,
+                    BarcodeFormat.DATA_MATRIX.QR_CODE,
+                    QRCodeWidth, QRCodeWidth, null
+            );
+
+        } catch (IllegalArgumentException Illegalargumentexception) {
+
+            return null;
+        }
+        int bitMatrixWidth = bitMatrix.getWidth();
+
+        int bitMatrixHeight = bitMatrix.getHeight();
+
+        int[] pixels = new int[bitMatrixWidth * bitMatrixHeight];
+
+        for (int y = 0; y < bitMatrixHeight; y++) {
+            int offset = y * bitMatrixWidth;
+
+            for (int x = 0; x < bitMatrixWidth; x++) {
+
+                pixels[offset + x] = bitMatrix.get(x, y) ?
+                        getResources().getColor(R.color.black):getResources().getColor(R.color.white);
+            }
+        }
+        Bitmap bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444);
+
+        bitmap.setPixels(pixels, 0, 500, 0, 0, bitMatrixWidth, bitMatrixHeight);
+        return bitmap;
     }
 }

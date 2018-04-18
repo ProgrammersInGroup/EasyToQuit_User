@@ -30,7 +30,7 @@ public class Assessment extends Fragment {
 
     EditText edt_assessment_smoking_year;
     EditText edt_assessment_date_smoking;
-    EditText edt_assessment_week_smoking;
+    //EditText edt_assessment_week_smoking;
     EditText edt_assessment_quit_smoking_date;
     EditText edt_assessment_save_money;
     Button sure;
@@ -45,7 +45,7 @@ public class Assessment extends Fragment {
         startActivity(intent);*/
         edt_assessment_smoking_year=(EditText)view.findViewById(R.id.edt_assessment_smoking_year);
         edt_assessment_date_smoking=(EditText)view.findViewById(R.id.edt_assessment_date_smoking);
-        edt_assessment_week_smoking=(EditText)view.findViewById(R.id.edt_assessment_week_smoking);
+        //edt_assessment_week_smoking=(EditText)view.findViewById(R.id.edt_assessment_week_smoking);
         edt_assessment_quit_smoking_date=(EditText)view.findViewById(R.id.edt_assessment_quit_smoking_date);
         edt_assessment_save_money=(EditText)view.findViewById(R.id.edt_assessment_save_money);
         sure =(Button)view.findViewById(R.id.btn_sure);
@@ -59,7 +59,7 @@ public class Assessment extends Fragment {
 
             if (edt_assessment_smoking_year.getText().toString().matches("") ||
                     edt_assessment_date_smoking.getText().toString().matches("") ||
-                    edt_assessment_week_smoking.getText().toString().matches("") ||
+                    //edt_assessment_week_smoking.getText().toString().matches("") ||
                     edt_assessment_quit_smoking_date.getText().toString().matches("") ||
                     edt_assessment_save_money.getText().toString().matches("")) {
                 Toast toast = Toast.makeText(getActivity(), "欄位不能是空白!!", Toast.LENGTH_LONG);
@@ -84,8 +84,11 @@ public class Assessment extends Fragment {
                 FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
                 DatabaseReference myRef = database.getReference("usersAssessment/" + sb);
 
-                SmokeStatus smokeStatus = new SmokeStatus(edt_assessment_smoking_year.getText().toString(), edt_assessment_date_smoking.getText().toString(),
-                        edt_assessment_week_smoking.getText().toString(), edt_assessment_quit_smoking_date.getText().toString(),
+                SmokeStatus smokeStatus = new SmokeStatus(
+                        edt_assessment_smoking_year.getText().toString(),
+                        edt_assessment_date_smoking.getText().toString(),
+                        //edt_assessment_week_smoking.getText().toString(),
+                        edt_assessment_quit_smoking_date.getText().toString(),
                         edt_assessment_save_money.getText().toString());
                 myRef.child("評估資料").child("第一次評估資料").setValue(smokeStatus);
 

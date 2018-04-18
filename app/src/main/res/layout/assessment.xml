@@ -115,7 +115,7 @@
                         android:textSize="28sp" />
                 </LinearLayout>
             </LinearLayout>
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
@@ -162,7 +162,7 @@
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
                 </LinearLayout>
-            </LinearLayout>
+            </LinearLayout>-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
                     android:id="@+id/txt_assessment_quit_smoking_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4. 設定戒菸日："
+                    android:text="3. 設定戒菸日："
                     android:textColor="@color/colorPrimary"
                     android:textSize="28sp" />
 
@@ -221,7 +221,7 @@
                     android:id="@+id/txt_assessment_save_money"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5. 目前菸價："
+                    android:text="4. 目前菸價："
                     android:textColor="@color/colorPrimary"
                     android:textSize="28sp" />
 

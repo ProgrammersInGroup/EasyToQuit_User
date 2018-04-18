@@ -3,6 +3,7 @@ package com.easytoquit.easytoquit_user.Insertion;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -17,11 +18,17 @@ import android.widget.Toast;
 import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
 import com.easytoquit.easytoquit_user.RetreiveData.User;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStreamReader;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -33,6 +40,7 @@ public class InsertProfile extends AppCompatActivity {
     EditText age;
     EditText phone;
     String BitmapString;
+    Bitmap mBitmapImage;
     CircleImageView add, profile_image;
     private static final String data = "DATA";
     private static final String numberField = "number";
@@ -59,6 +67,58 @@ public class InsertProfile extends AppCompatActivity {
 
         setTitle("新增基本資料");
 
+        FileInputStream fis = null;
+        StringBuilder sb = new StringBuilder();
+        try{
+            fis = this.openFileInput("note.txt");
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader br = new BufferedReader(isr);
+            String str = "";
+            while ((str = br.readLine())!=null){
+                sb.append(str);
+            }
+            br.close();
+            isr.close();
+            fis.close();
+        }catch (Exception e){
+            Log.e("Internal",  e.toString() );
+        }
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
+        DatabaseReference myRef = database.getReference("users/"+sb);
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // Get Post object and use the values to update the UI
+                /*User user = dataSnapshot.getValue(User.class);
+                // [START_EXCLUDE]
+                Log.d(TAG, "Value is: " + user);*/
+                User value = dataSnapshot.getValue(User.class);
+                name.setText(value.getName());
+                age.setText(value.getAge());
+                gender.setText(value.getGender());
+                phone.setText(value.getPhone());
+                BitmapString = value.getBitmapString();
+                mBitmapImage=getBitmap(BitmapString);
+                //lets put the image in the image view
+                //Bitmap d = new BitmapDrawable(this.getResources() , selectedImage).getBitmap();
+                int nh = (int) ( mBitmapImage.getHeight() * (512.0 / mBitmapImage.getWidth()) );
+                Bitmap scaled = Bitmap.createScaledBitmap(mBitmapImage, 512, nh, true);
+                profile_image.setImageBitmap(scaled);
+                Log.d(TAG, "Value is: " + value.getName());
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Getting Post failed, log a message
+                Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
+                // [START_EXCLUDE]
+               /* Toast.makeText(Profile.this, "Failed to load post.",
+                        Toast.LENGTH_SHORT).show();*/
+                // [END_EXCLUDE]
+            }
+        });
+
 
     }
     public void Image(){
@@ -77,6 +137,11 @@ public class InsertProfile extends AppCompatActivity {
             FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
             DatabaseReference myRef = database.getReference();
 
+
+
+
+
+
             //加入防呆功能 所有edittext不可為空
             if (name.getText().toString().matches("") ||
                     gender.getText().toString().matches("") ||
@@ -85,8 +150,12 @@ public class InsertProfile extends AppCompatActivity {
                 Toast toast = Toast.makeText(InsertProfile.this, "欄位不能是空白!!", Toast.LENGTH_LONG);
                 toast.show();
             } else {
-                User user = new User(name.getText().toString(), age.getText().toString(),
-                        gender.getText().toString(), phone.getText().toString(),BitmapString);
+                User user = new User(
+                        name.getText().toString(),
+                        age.getText().toString(),
+                        gender.getText().toString(),
+                        phone.getText().toString(),
+                        BitmapString);
                 myRef.child("users").child(phone.getText().toString()).setValue(user);
                 /*GlobalVariable gv = (GlobalVariable)getApplicationContext();
                 gv.setPhone(phone.getText().toString());*/
@@ -162,5 +231,14 @@ public class InsertProfile extends AppCompatActivity {
         }
 
     }
+    public Bitmap getBitmap(String x){
 
+        byte[] bitmapArray;
+        bitmapArray = Base64.decode(x,Base64.DEFAULT);
+        Bitmap bmp = BitmapFactory.decodeByteArray(bitmapArray
+                , 0 , bitmapArray.length);
+        return bmp;
+
+
+    }
 }

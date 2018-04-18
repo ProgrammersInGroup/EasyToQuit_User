@@ -7,15 +7,15 @@ package com.easytoquit.easytoquit_user.RetreiveData;
 public class SmokeStatus {
     private String smokeage ;
     private String smokehowmuchday ;
-    private String smokehowmuchweek;
+   //private String smokehowmuchweek;
     private String smokequitday;
     private String smokemoney;
     public SmokeStatus() {
     }
-    public SmokeStatus(String smokeage, String smokehowmuchday,String smokehowmuchweek,String smokequitday,String smokemoney) {
+    public SmokeStatus(String smokeage, String smokehowmuchday/*,String smokehowmuchweek*/,String smokequitday,String smokemoney) {
         this.smokeage = smokeage;
         this.smokehowmuchday = smokehowmuchday;
-        this.smokehowmuchweek=smokehowmuchweek;
+        //this.smokehowmuchweek=smokehowmuchweek;
         this.smokequitday=smokequitday;
         this.smokemoney=smokemoney;
     }
@@ -32,12 +32,12 @@ public class SmokeStatus {
     public void setsmokehowmuchday(String smokehowmuchday) {
         this.smokehowmuchday = smokehowmuchday;
     }
-    public String getsmokehowmuchweek() {
+    /*public String getsmokehowmuchweek() {
         return smokehowmuchweek;
     }
     public void setsmokehowmuchweek(String smokehowmuchweek) {
         this.smokehowmuchweek = smokehowmuchweek;
-    }
+    }*/
     public String getsmokequitday() {
         return smokequitday;
     }

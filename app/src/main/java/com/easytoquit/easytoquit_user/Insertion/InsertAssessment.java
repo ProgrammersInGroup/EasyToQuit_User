@@ -72,8 +72,11 @@ public class InsertAssessment extends AppCompatActivity {
                 FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
                 DatabaseReference myRef = database.getReference("usersAssessment/" + sb);
 
-                SmokeStatus smokeStatus = new SmokeStatus(edt_assessment_smoking_year.getText().toString(), edt_assessment_date_smoking.getText().toString(),
-                        edt_assessment_week_smoking.getText().toString(), edt_assessment_quit_smoking_date.getText().toString(),
+                SmokeStatus smokeStatus = new SmokeStatus(
+                        edt_assessment_smoking_year.getText().toString(),
+                        edt_assessment_date_smoking.getText().toString(),
+                        //edt_assessment_week_smoking.getText().toString(),
+                        edt_assessment_quit_smoking_date.getText().toString(),
                         edt_assessment_save_money.getText().toString());
                 myRef.child("評估資料").child("第一次評估資料").setValue(smokeStatus);
 

@@ -27,7 +27,7 @@ import java.io.InputStreamReader;
 
 public class Status extends Fragment {
     TextView show_smoking_year;
-    TextView show_week_smoking;
+    //TextView show_week_smoking;
     TextView show_date_smoking;
     TextView show_quit_smoking_date;
     TextView show_smoking_money;
@@ -37,7 +37,7 @@ public class Status extends Fragment {
         View view = inflater.inflate(R.layout.status, container, false);
         final String TAG="Status";
         show_smoking_year = (TextView)view.findViewById(R.id.show_smoking_year) ;
-        show_week_smoking = (TextView)view.findViewById(R.id.show_week_smoking) ;
+        //show_week_smoking = (TextView)view.findViewById(R.id.show_week_smoking) ;
         show_date_smoking = (TextView)view.findViewById(R.id.show_date_smoking) ;
         show_quit_smoking_date = (TextView)view.findViewById(R.id.show_quit_smoking_date) ;
         show_smoking_money = (TextView)view.findViewById(R.id.show_smoking_money) ;
@@ -68,12 +68,23 @@ public class Status extends Fragment {
                 /*User user = dataSnapshot.getValue(User.class);
                 // [START_EXCLUDE]
                 Log.d(TAG, "Value is: " + user);*/
+
                 SmokeStatus value = dataSnapshot.getValue(SmokeStatus.class);
+                //計算菸價
+                float day = Float.parseFloat(value.getsmokehowmuchday());
+                float money = Float.parseFloat(value.getsmokemoney());
+                float moneyofmonth;
+                moneyofmonth = day*money*1.5f;
+                String textmoneyofmonth = String.valueOf(moneyofmonth);
+
+
+
                 show_smoking_year.setText(value.getsmokeage());
-                show_week_smoking.setText(value.getsmokehowmuchweek());
+                //show_week_smoking.setText(value.getsmokehowmuchweek());
                 show_date_smoking.setText(value.getsmokehowmuchday());
                 show_quit_smoking_date.setText(value.getsmokequitday());
-                show_smoking_money.setText(value.getsmokemoney());
+                //show_smoking_money.setText(value.getsmokemoney());
+                show_smoking_money.setText(textmoneyofmonth);
                 Log.d(TAG, "Value is: " + value.getsmokeage());
             }
 
