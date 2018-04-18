@@ -281,11 +281,11 @@ public class MainActivity extends AppCompatActivity
                         .replace(R.id.content_frame, new Tips())
                         .commit();
                 break;
-            case R.id.nav_history:
+            /*case R.id.nav_history:
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_frame, new History())
                         .commit();
-                break;
+                break;*/
             /*case R.id.nav_others:
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_frame, new Others())

@@ -172,7 +172,7 @@
 
             </LinearLayout> <!-- 戒菸日 -->
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:id="@+id/linearLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="100sp"
@@ -212,7 +212,7 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="25sp"
                     android:layout_gravity="center"/>
-            </LinearLayout> <!-- 目前已省金額 -->
+            </LinearLayout> &lt;!&ndash; 目前已省金額 &ndash;&gt;-->
         </LinearLayout>
     </ScrollView>
 
