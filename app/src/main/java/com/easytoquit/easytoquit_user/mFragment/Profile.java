@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.easytoquit.easytoquit_user.Insertion.InsertProfile;
 import com.easytoquit.easytoquit_user.R;
+import com.easytoquit.easytoquit_user.RetreiveData.Stop_Smoking_Really;
 import com.easytoquit.easytoquit_user.RetreiveData.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -51,7 +52,6 @@ public class Profile extends Fragment {
     CircleImageView profile_image;
     String BitmapString;
     Bitmap mBitmapImage;
-
 
     ImageView image;
     String text2Qr;

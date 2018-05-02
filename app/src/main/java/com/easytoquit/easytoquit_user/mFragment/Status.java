@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.easytoquit.easytoquit_user.R;
 import com.easytoquit.easytoquit_user.RetreiveData.SmokeStatus;
+import com.easytoquit.easytoquit_user.RetreiveData.Stop_Smoking_Really;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,7 +31,13 @@ public class Status extends Fragment {
     //TextView show_week_smoking;
     TextView show_date_smoking;
     TextView show_quit_smoking_date;
-    //TextView show_smoking_money;
+    TextView show_smoking_money;
+
+    TextView sumaei;
+    TextView sumbfj;
+    TextView sumcgk;
+    TextView sumdhl;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -40,7 +47,13 @@ public class Status extends Fragment {
         //show_week_smoking = (TextView)view.findViewById(R.id.show_week_smoking) ;
         show_date_smoking = (TextView)view.findViewById(R.id.show_date_smoking) ;
         show_quit_smoking_date = (TextView)view.findViewById(R.id.show_quit_smoking_date) ;
-        //show_smoking_money = (TextView)view.findViewById(R.id.show_smoking_money) ;
+        show_smoking_money = (TextView)view.findViewById(R.id.show_smoking_money) ;
+
+        sumaei=(TextView)view.findViewById(R.id.sumaei_layout);
+        sumbfj=(TextView)view.findViewById(R.id.sumbfj_layout);
+        sumcgk=(TextView)view.findViewById(R.id.sumcgk_layout);
+        sumdhl=(TextView)view.findViewById(R.id.sumdhl_layout);
+
         FileInputStream fis = null;
         StringBuilder sb = new StringBuilder();
         try{
@@ -61,6 +74,8 @@ public class Status extends Fragment {
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         DatabaseReference myRef = database.getReference("usersAssessment/" + sb +"/評估資料/"+"第一次評估資料");
 
+        DatabaseReference myRef1 = database.getReference("usersAssessment/" + sb +"/戒菸指數");
+
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -70,6 +85,7 @@ public class Status extends Fragment {
                 Log.d(TAG, "Value is: " + user);*/
 
                 SmokeStatus value = dataSnapshot.getValue(SmokeStatus.class);
+
                 //計算菸價
                 float day = Float.parseFloat(value.getsmokehowmuchday());
                 float money = Float.parseFloat(value.getsmokemoney());
@@ -84,10 +100,8 @@ public class Status extends Fragment {
                 show_date_smoking.setText(value.getsmokehowmuchday());
                 show_quit_smoking_date.setText(value.getsmokequitday());
                 //show_smoking_money.setText(value.getsmokemoney());
-<<<<<<< HEAD
                 show_smoking_money.setText(textmoneyofmonth);
-=======
->>>>>>> 53e7a2ce44bf29e55086aa43299e5f412863bde1
+
                 Log.d(TAG, "Value is: " + value.getsmokeage());
             }
 
@@ -99,6 +113,22 @@ public class Status extends Fragment {
                /* Toast.makeText(Profile.this, "Failed to load post.",
                         Toast.LENGTH_SHORT).show();*/
                 // [END_EXCLUDE]
+            }
+        });
+        myRef1.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Stop_Smoking_Really stopsmoking = dataSnapshot.getValue(Stop_Smoking_Really.class);
+                Log.d(TAG, "Value is: " + stopsmoking.getsumaei());
+                sumaei.setText(stopsmoking.getsumaei());
+                sumbfj.setText(stopsmoking.getsumbfj());
+                sumcgk.setText(stopsmoking.getsumcgk());
+                sumdhl.setText(stopsmoking.getsumdhl());
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
             }
         });
 
