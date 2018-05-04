@@ -12,11 +12,14 @@ import android.widget.TextView;
 import com.easytoquit.easytoquit_user.R;
 import com.easytoquit.easytoquit_user.RetreiveData.SmokeStatus;
 import com.easytoquit.easytoquit_user.RetreiveData.Stop_Smoking_Really;
+import com.easytoquit.easytoquit_user.RetreiveData.Why_smoking;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -38,6 +41,13 @@ public class Status extends Fragment {
     TextView sumcgk;
     TextView sumdhl;
 
+    TextView sumstimulate;
+    TextView sumcontrol;
+    TextView sumrelax;
+    TextView sumemotional＿support;
+    TextView sumdesire;
+    TextView sumhabitual;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -53,6 +63,15 @@ public class Status extends Fragment {
         sumbfj=(TextView)view.findViewById(R.id.sumbfj_layout);
         sumcgk=(TextView)view.findViewById(R.id.sumcgk_layout);
         sumdhl=(TextView)view.findViewById(R.id.sumdhl_layout);
+
+        sumstimulate = (TextView)view.findViewById(R.id.stimulate＿layout);
+        sumcontrol =(TextView)view.findViewById(R.id.control_layout) ;
+        sumrelax=(TextView)view.findViewById(R.id.relax_layout);
+        sumemotional＿support=(TextView)view.findViewById(R.id.emotional＿support_layout);
+        sumdesire=(TextView)view.findViewById(R.id.desire_layout);
+        sumhabitual=(TextView)view.findViewById(R.id.habitual_layout);
+
+
 
         FileInputStream fis = null;
         StringBuilder sb = new StringBuilder();
@@ -75,6 +94,8 @@ public class Status extends Fragment {
         DatabaseReference myRef = database.getReference("usersAssessment/" + sb +"/評估資料/"+"第一次評估資料");
 
         DatabaseReference myRef1 = database.getReference("usersAssessment/" + sb +"/戒菸指數");
+
+        DatabaseReference myRef2 = database.getReference("usersAssessment/" + sb +"/為什麼戒菸？");
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -131,6 +152,25 @@ public class Status extends Fragment {
                 Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
             }
         });
+        myRef2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Why_smoking why_smoking = dataSnapshot.getValue(Why_smoking.class);
+                sumstimulate.setText(why_smoking.getsumStimulate());
+                sumcontrol.setText(why_smoking.getsumControl());
+                sumrelax.setText(why_smoking.getsumRelax());
+                sumemotional＿support.setText(why_smoking.getsumEmotional＿support());
+                sumdesire.setText(why_smoking.getsumDesire());
+                sumhabitual.setText(why_smoking.getsumHabitual());
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
+            }
+        });
+
 
         return view;
 

@@ -398,6 +398,267 @@
 
 
             </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="500sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="5dp"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="你為什麼吸菸？"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="刺激感"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/stimulate＿layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*刺激感 */
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="操控感"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/control_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*操控感 */
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="愉悅/放鬆感"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/relax_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*愉悅/放鬆感 */
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="精神支柱"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/emotional＿support_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*精神支柱 */
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="心理上成癮"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/desire_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*心理上成癮 */
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="習慣性"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/habitual_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*習慣性 */
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
