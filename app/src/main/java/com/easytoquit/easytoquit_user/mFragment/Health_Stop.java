@@ -10,7 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
@@ -35,20 +37,15 @@ import static android.content.ContentValues.TAG;
  */
 
 public class Health_Stop extends Fragment {
-    Button back;
-    ImageView image;
+    Button send;
     String text2Qr;
     Bitmap bitmap;
+    EditText test;
     public final static int QRCodeWidth = 500 ;
 
     /*GlobalVariable gv = (GlobalVariable)getActivity().getApplicationContext();
     String phone = gv.getPhone();*/
-
-
-
-
     //DatabaseReference myRef = database.getReference("users/0935901509/phone");
-
 
     @Nullable
     @Override
@@ -56,107 +53,47 @@ public class Health_Stop extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.health_stop, container, false);
-        image = (ImageView)view.findViewById(R.id.iv);
-        back = (Button)view.findViewById(R.id.back);
 
+       test = view.findViewById(R.id.autoCompleteTextView);
+       send = view.findViewById(R.id.back);
 
-        //讀出檔案
-        FileInputStream fis = null;
-        StringBuilder sb = new StringBuilder();
-        try{
-            fis = getActivity().openFileInput("note.txt");
-            InputStreamReader isr = new InputStreamReader(fis);
-            BufferedReader br = new BufferedReader(isr);
-            String str = "";
-            while ((str = br.readLine())!=null){
-                sb.append(str);
-            }
-            br.close();
-            isr.close();
-            fis.close();
-        }catch (Exception e){
-            Log.e("Internal",  e.toString() );
-        }
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
-        DatabaseReference myRef = database.getReference("users/" + sb + "/phone");
-
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                text2Qr = dataSnapshot.getValue(String.class);
-                //text2Qr = "0935901509";
-                Log.d(TAG, "Phone: " + text2Qr);
-                try {
-                    bitmap = TextToImageEncode(text2Qr);
-
-                    image.setImageBitmap(bitmap);
-
-                } catch (WriterException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.w(TAG, "Failed to read value.", error.toException());
-
-            }
-        });
-        back.setOnClickListener(onClick);
-
+        send.setOnClickListener(onClick);
 
         return view;
     }
 
-    Bitmap TextToImageEncode(String Value) throws WriterException {
-        BitMatrix bitMatrix;
-        try {
-            bitMatrix = new MultiFormatWriter().encode(
-                    Value,
-                    BarcodeFormat.DATA_MATRIX.QR_CODE,
-                    QRCodeWidth, QRCodeWidth, null
-            );
 
-        } catch (IllegalArgumentException Illegalargumentexception) {
-
-            return null;
-        }
-        int bitMatrixWidth = bitMatrix.getWidth();
-
-        int bitMatrixHeight = bitMatrix.getHeight();
-
-        int[] pixels = new int[bitMatrixWidth * bitMatrixHeight];
-
-        for (int y = 0; y < bitMatrixHeight; y++) {
-            int offset = y * bitMatrixWidth;
-
-            for (int x = 0; x < bitMatrixWidth; x++) {
-
-                pixels[offset + x] = bitMatrix.get(x, y) ?
-                        getResources().getColor(R.color.black):getResources().getColor(R.color.white);
-            }
-        }
-        Bitmap bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444);
-
-        bitmap.setPixels(pixels, 0, 500, 0, 0, bitMatrixWidth, bitMatrixHeight);
-        return bitmap;
-    }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        getActivity().setTitle("健康小站");
+        getActivity().setTitle("問題Q&A");
 
     }
 
     private View.OnClickListener onClick = new View.OnClickListener() {
 
         public void onClick(View v) {
+            FileInputStream fis = null;
+            StringBuilder sb = new StringBuilder();
+            try{
+                fis = getActivity().openFileInput("note.txt");
+                InputStreamReader isr = new InputStreamReader(fis);
+                BufferedReader br = new BufferedReader(isr);
+                String str = "";
+                while ((str = br.readLine())!=null){
+                    sb.append(str);
+                }
+                br.close();
+                isr.close();
+                fis.close();
+            }catch (Exception e){
+                Log.e("Internal",  e.toString() );
+            }
+            FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
+            DatabaseReference myRef = database.getReference("Q&A/" + sb);
+            myRef.child("使用者問題").setValue(test.getText().toString());
             Intent intent = new Intent();
             intent.setClass(getActivity(), MainActivity.class);
             startActivity(intent);

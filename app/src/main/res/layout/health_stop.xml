@@ -11,13 +11,19 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/iv"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="85dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:layout_margin="15px"
+            android:text="意見回饋Q &amp; A" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:text="" />a
     </LinearLayout> <!--QRCode 生成的區域-->
 
     <LinearLayout
@@ -27,7 +33,7 @@
         android:layout_alignParentBottom="true"
         >
         <Button
-            android:text="返回"
+            android:text="送出"
             android:textSize="20dp"
             android:textColor="@color/white"
             android:layout_width="match_parent"
@@ -35,7 +41,9 @@
             android:height="65dp"
             android:background="@drawable/btnstyle"
             android:id="@+id/back"/>
-    </LinearLayout> <!--返回按鈕-->
+    </LinearLayout>
+
+    <!--返回按鈕-->
 
 
 </RelativeLayout>

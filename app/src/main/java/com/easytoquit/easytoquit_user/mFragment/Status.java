@@ -30,6 +30,7 @@ import java.io.InputStreamReader;
  */
 
 public class Status extends Fragment {
+
     TextView show_smoking_year;
     //TextView show_week_smoking;
     TextView show_date_smoking;
@@ -114,8 +115,6 @@ public class Status extends Fragment {
                 moneyofmonth = day*money*1.5f;
                 String textmoneyofmonth = String.valueOf(moneyofmonth);
 
-
-
                 show_smoking_year.setText(value.getsmokeage());
                 //show_week_smoking.setText(value.getsmokehowmuchweek());
                 show_date_smoking.setText(value.getsmokehowmuchday());
@@ -155,6 +154,7 @@ public class Status extends Fragment {
         myRef2.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
                 Why_smoking why_smoking = dataSnapshot.getValue(Why_smoking.class);
                 sumstimulate.setText(why_smoking.getsumStimulate());
                 sumcontrol.setText(why_smoking.getsumControl());
@@ -170,7 +170,6 @@ public class Status extends Fragment {
                 Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
             }
         });
-
 
         return view;
 

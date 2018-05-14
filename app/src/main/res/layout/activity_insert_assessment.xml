@@ -285,7 +285,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginLeft="30sp"
-                        android:text="a. 吸煙可能會讓我罹患嚴重的疾病。"
+                        android:text="a. 吸菸可能會讓我罹患嚴重的疾病。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 

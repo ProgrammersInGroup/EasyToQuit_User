@@ -67,34 +67,35 @@ public class Information extends Fragment {
                     startActivity(intent);
                     //Toast.makeText(getActivity(), information_category[i], Toast.LENGTH_SHORT).show();
                 }
-                else if(i == 3){
-                    intent  = new Intent();
+                else if(i == 3) {
+                    intent = new Intent();
                     intent.setClass(getActivity(), Information_Pdf4.class);
                     startActivity(intent);
-                    //Toast.makeText(getActivity(), information_category[i], Toast.LENGTH_SHORT).show();
-                }else if (i == 4){
-                    Toast.makeText(getActivity(), "Cannot Show Pdf", Toast.LENGTH_SHORT).show();
                 }
-                else if(i == 5){
+                    //Toast.makeText(getActivity(), information_category[i], Toast.LENGTH_SHORT).show();
+//                }else if (i == 4){
+//                    Toast.makeText(getActivity(), "Cannot Show Pdf", Toast.LENGTH_SHORT).show();
+//                }
+                else if(i == 4){
                     intent  = new Intent();
                     intent.setClass(getActivity(),Tips_Pdf1.class);
                     startActivity(intent);
                 }
-                else if(i == 6){
+                else if(i == 5){
                     intent  = new Intent();
                     intent.setClass(getActivity(),Tips_Pdf2.class);
                     startActivity(intent);
                 }
-                else if(i == 7){
+                else if(i == 6){
                     intent  = new Intent();
                     intent.setClass(getActivity(),Tips_Pdf3.class);
                     startActivity(intent);
                 }
-                else if(i == 8){
+                else if(i == 7){
                     intent  = new Intent();
                     intent.setClass(getActivity(),Tips_Pdf4.class);
                     startActivity(intent);
-                }else if(i == 9){
+                }else if(i == 8){
                     intent  = new Intent();
                     intent.setClass(getActivity(),Tips_Pdf5.class);
                     startActivity(intent);
@@ -110,6 +111,6 @@ public class Information extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        getActivity().setTitle("衛教資訊");
+        getActivity().setTitle("戒菸方法");
     }
 }

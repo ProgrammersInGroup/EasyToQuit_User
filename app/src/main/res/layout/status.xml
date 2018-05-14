@@ -256,7 +256,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15sp"
+                    android:layout_marginLeft="10sp"
                     android:text="為了健康："
                     android:textColor="@color/colorPrimary"
                     android:textSize="25sp"
@@ -266,16 +266,19 @@
                     android:id="@+id/sumaei_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="45sp"
+                    android:layout_marginLeft="40sp"
                     android:textColor="@color/colorPrimary"
                     android:textSize="25sp"
                     android:layout_gravity="center"
                     />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40sp"
+                    android:layout_marginLeft="35sp"
                     android:text="分"
                     android:textColor="@color/colorPrimary"
                     android:textSize="25sp"
@@ -294,7 +297,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15sp"
+                        android:layout_marginLeft="10sp"
                         android:text="為了典範："
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -304,16 +307,19 @@
                         android:id="@+id/sumbfj_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="45sp"
+                        android:layout_marginLeft="40sp"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
                         android:layout_gravity="center"
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
+                        android:layout_marginLeft="35sp"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -332,7 +338,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15sp"
+                        android:layout_marginLeft="10sp"
                         android:text="為了美感："
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -342,16 +348,19 @@
                         android:id="@+id/sumcgk_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="45sp"
+                        android:layout_marginLeft="40sp"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
                         android:layout_gravity="center"
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
+                        android:layout_marginLeft="35sp"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -370,7 +379,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15sp"
+                        android:layout_marginLeft="10sp"
                         android:text="為了控制："
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -380,16 +389,19 @@
                         android:id="@+id/sumdhl_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="45sp"
+                        android:layout_marginLeft="40sp"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
                         android:layout_gravity="center"
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
+                        android:layout_marginLeft="35sp"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -458,9 +470,11 @@
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -496,9 +510,11 @@
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -527,19 +543,22 @@
                         android:id="@+id/relax_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="45sp"
+                        android:layout_marginLeft="30sp"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
                         android:layout_gravity="center"
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
+
                         android:text="分"
+                        android:singleLine="true"
+                        android:gravity="right"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
+                        android:layout_weight="1"
                         android:layout_gravity="center"/>
                 </LinearLayout>/*愉悅/放鬆感 */
 
@@ -572,9 +591,11 @@
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
@@ -610,10 +631,12 @@
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
                         android:text="分"
+                        android:gravity="right"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
                         android:layout_gravity="center"/>
@@ -648,9 +671,11 @@
                         />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
                         android:textSize="25sp"
