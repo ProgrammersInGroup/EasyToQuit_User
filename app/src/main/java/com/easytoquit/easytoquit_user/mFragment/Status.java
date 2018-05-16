@@ -1,12 +1,14 @@
 package com.easytoquit.easytoquit_user.mFragment;
 
 import android.app.Fragment;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.easytoquit.easytoquit_user.R;
@@ -42,6 +44,11 @@ public class Status extends Fragment {
     TextView sumcgk;
     TextView sumdhl;
 
+    int sumaeiint;
+    int sumbfjint;
+    int sumcgkint;
+    int sumdhlint;
+
     TextView sumstimulate;
     TextView sumcontrol;
     TextView sumrelax;
@@ -49,6 +56,41 @@ public class Status extends Fragment {
     TextView sumdesire;
     TextView sumhabitual;
 
+    int sumstimulateint;
+    int sumcontrolint;
+    int sumrelaxint;
+    int sumemotional＿supportint;
+    int sumdesireint;
+    int sumhabitualint;
+
+    LinearLayout sumaeicolor;
+    TextView sumaei_layout_forhealth;
+    TextView sumaei_layout_score;
+
+    TextView sumbfj_layout_forexample;
+    TextView sumbfj_layout_score;
+
+    TextView sumcgk_layout_forpretty;
+    TextView sumcgk_layout_score;
+
+    TextView sumdhl_layout_forcontrol;
+    TextView sumdhl_layout_score;
+
+    TextView stimulate_for;
+    TextView stimulate_score;
+
+    TextView control_for;
+    TextView control_score;
+
+    TextView relax_for;
+    TextView relax_score;
+
+    TextView emotional＿supportint_for;
+    TextView emotional＿supportint_score;
+    TextView desireint_for;
+    TextView desireint_score;
+    TextView habitualint_for;
+    TextView habitualint_score;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -72,7 +114,36 @@ public class Status extends Fragment {
         sumdesire=(TextView)view.findViewById(R.id.desire_layout);
         sumhabitual=(TextView)view.findViewById(R.id.habitual_layout);
 
+        sumaeicolor=(LinearLayout)view.findViewById(R.id.aeisumcolor);
+        sumaei_layout_forhealth=(TextView)view.findViewById(R.id.sumaei_layout_forhealth);
+        sumaei_layout_score=(TextView)view.findViewById(R.id.sumaei_layout_score);
 
+        sumbfj_layout_forexample=(TextView)view.findViewById(R.id.sumbfj_layout_forexample);
+        sumbfj_layout_score=(TextView)view.findViewById(R.id.sumbfj_layout_score);
+
+        sumcgk_layout_forpretty=(TextView)view.findViewById(R.id.sumcgk_layout_forpretty);
+        sumcgk_layout_score=(TextView)view.findViewById(R.id.sumcgk_layout_score);
+
+        sumdhl_layout_forcontrol=(TextView)view.findViewById(R.id.sumdhl_layout_forcontrol);
+        sumdhl_layout_score=(TextView)view.findViewById(R.id.sumdhl_layout_score);
+
+        stimulate_for=(TextView)view.findViewById(R.id.stimulate_for);
+        stimulate_score=(TextView)view.findViewById(R.id.stimulate_score);
+
+        control_for=(TextView)view.findViewById(R.id.control_for);
+        control_score=(TextView)view.findViewById(R.id.control_score);
+
+        relax_for=(TextView)view.findViewById(R.id.relax_for);
+        relax_score=(TextView)view.findViewById(R.id.relax_score);
+
+        emotional＿supportint_for=(TextView)view.findViewById(R.id.emotional＿support_for);
+        emotional＿supportint_score=(TextView)view.findViewById(R.id.emotional＿support_score);
+
+        desireint_for=(TextView)view.findViewById(R.id.desire_for);
+        desireint_score=(TextView)view.findViewById(R.id.desire_score);
+
+        habitualint_for=(TextView)view.findViewById(R.id.habits_for);
+        habitualint_score=(TextView)view.findViewById(R.id.habits_score);
 
         FileInputStream fis = null;
         StringBuilder sb = new StringBuilder();
@@ -90,7 +161,7 @@ public class Status extends Fragment {
         }catch (Exception e){
             Log.e("Internal",  e.toString() );
         }
-
+        Log.d(TAG, "momery_i_want: " + sb);
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
         DatabaseReference myRef = database.getReference("usersAssessment/" + sb +"/評估資料/"+"第一次評估資料");
 
@@ -139,11 +210,45 @@ public class Status extends Fragment {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Stop_Smoking_Really stopsmoking = dataSnapshot.getValue(Stop_Smoking_Really.class);
-                Log.d(TAG, "Value is: " + stopsmoking.getsumaei());
+//                Log.d(TAG, "Value is: " + stopsmoking.getsumaei());
                 sumaei.setText(stopsmoking.getsumaei());
                 sumbfj.setText(stopsmoking.getsumbfj());
                 sumcgk.setText(stopsmoking.getsumcgk());
                 sumdhl.setText(stopsmoking.getsumdhl());
+
+                sumaeiint = Integer.valueOf(stopsmoking.getsumaei());
+                sumbfjint=Integer.valueOf(stopsmoking.getsumbfj());
+                sumcgkint=Integer.valueOf(stopsmoking.getsumcgk());
+                sumdhlint=Integer.valueOf(stopsmoking.getsumdhl());
+
+                if(sumaeiint>=9){
+                    //sumaeicolor.setBackgroundColor(Color.RED);
+                    sumaei_layout_forhealth.setTextColor(Color.RED);
+                    sumaei.setTextColor(Color.RED);
+                    sumaei_layout_score.setTextColor(Color.RED);
+                    Log.w(TAG, "it is big than nine");
+                }
+                if(sumbfjint>=9){
+                    //sumaeicolor.setBackgroundColor(Color.RED);
+                    sumbfj_layout_forexample.setTextColor(Color.RED);
+                    sumbfj.setTextColor(Color.RED);
+                    sumbfj_layout_score.setTextColor(Color.RED);
+                    Log.w(TAG, "it is big than nine");
+                }
+                if(sumcgkint>=9){
+                    //sumaeicolor.setBackgroundColor(Color.RED);
+                    sumcgk_layout_forpretty.setTextColor(Color.RED);
+                    sumcgk.setTextColor(Color.RED);
+                    sumcgk_layout_score.setTextColor(Color.RED);
+                    Log.w(TAG, "it is big than nine");
+                }
+                if(sumdhlint>=9){
+                    //sumaeicolor.setBackgroundColor(Color.RED);
+                    sumdhl_layout_forcontrol.setTextColor(Color.RED);
+                    sumdhl.setTextColor(Color.RED);
+                    sumdhl_layout_score.setTextColor(Color.RED);
+                    Log.w(TAG, "it is big than nine");
+                }
             }
 
             @Override
@@ -163,13 +268,52 @@ public class Status extends Fragment {
                 sumdesire.setText(why_smoking.getsumDesire());
                 sumhabitual.setText(why_smoking.getsumHabitual());
 
-            }
+                sumstimulateint = Integer.valueOf(why_smoking.getsumStimulate());
+                sumcontrolint=Integer.valueOf(why_smoking.getsumControl());
+                sumrelaxint=Integer.valueOf(why_smoking.getsumRelax());
+                sumemotional＿supportint=Integer.valueOf(why_smoking.getsumEmotional＿support());
+                sumdesireint=Integer.valueOf(why_smoking.getsumDesire());
+                sumhabitualint=Integer.valueOf(why_smoking.getsumHabitual());
+
+                if(sumstimulateint>=11){
+                    stimulate_for.setTextColor(Color.RED);
+                    sumstimulate.setTextColor(Color.RED);
+                    stimulate_score.setTextColor(Color.RED);
+                }
+                if(sumcontrolint>=11) {
+                    control_for.setTextColor(Color.RED);
+                    sumcontrol.setTextColor(Color.RED);
+                    control_score.setTextColor(Color.RED);
+                }
+                if(sumrelaxint>=11) {
+                    relax_for.setTextColor(Color.RED);
+                    sumrelax.setTextColor(Color.RED);
+                    relax_score.setTextColor(Color.RED);
+                }
+                if(sumemotional＿supportint>=11) {
+                    emotional＿supportint_for.setTextColor(Color.RED);
+                    sumemotional＿support.setTextColor(Color.RED);
+                    emotional＿supportint_score.setTextColor(Color.RED);
+                }
+                if(sumdesireint>=11) {
+                    desireint_for.setTextColor(Color.RED);
+                    sumdesire.setTextColor(Color.RED);
+                    desireint_score.setTextColor(Color.RED);
+                }
+                if(sumhabitualint>=11) {
+                    habitualint_for.setTextColor(Color.RED);
+                    sumhabitual.setTextColor(Color.RED);
+                    habitualint_score.setTextColor(Color.RED);
+                }
+                }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
             }
         });
+
+
 
         return view;
 

@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.easytoquit.easytoquit_user.Insertion.question_stop_smoking">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            /*你真的有心想要戒菸嗎？*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_assessment_stop_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 你真的有心想要戒菸嗎？："
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/unit_assessment_sick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="a. 吸菸可能會讓我罹患嚴重的疾病。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*a. 吸煙可能會讓我罹患嚴重的疾病。choose_stop_smoke*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/choose_stop_smoke"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/choose_stop_smoke1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/choose_stop_smoke2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/choose_stop_smoke3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/choose_stop_smoke4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/typical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="b. 我吸菸是給別人做一個不良的典範。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*b. 我吸菸是給別人做一個不良的典範。typical*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/typical_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/typical_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/typical_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/typical_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/typical_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/habits_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="c.我認為吸煙是一種散漫的行為習慣。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*c.我認為吸煙是一種散漫的行為習慣。habits*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/habits_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/habits_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/habits_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/habits_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/habits_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/challenge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="d.控制吸菸對我來說是一種挑戰。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*d.控制吸菸對我來說是一種挑戰。challenge*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/challenge_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/challenge_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/challenge_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/challenge_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/challenge_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Breathe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="e.吸菸會引起呼吸急促。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*e.吸菸會引起呼吸急促。breathe*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/breathe_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/breathe_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/breathe_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/breathe_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/breathe_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/influences"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="f.如我戒菸可能也會影響別人戒菸。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*f.如我戒菸可能也會影響別人戒菸。influences*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/influences_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/influences_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/influences_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/influences_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/influences_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Pollution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="g.吸菸會造成衣服及其他個人物品的污染。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*g.吸菸會造成衣服及其他個人物品的污染。pollution*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pollution_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/pollution_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/pollution_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/pollution_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/pollution_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Willpower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="h.戒菸表示我有意志力。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*h.戒菸表示我有意志力。willpower*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/willpower_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/willpower_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/willpower_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/willpower_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/willpower_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/health"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="i.吸菸會為害我的健康。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*i.吸菸會危害我的健康health*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/health_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/health_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/health_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/health_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/health_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Closer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="j.我如果吸菸會影響親近我的人際需吸菸。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*j.我如果吸菸會影響親近我的人際需吸菸closer*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/closer_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/closer_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/closer_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/closer_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/closer_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/taste_smell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="k.如果我戒菸，可以改善我的味覺及嗅覺。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*k.如果我戒菸，可以改善我的味覺及嗅覺。taste_smell*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/taste_smell_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/taste_smell_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/taste_smell_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/taste_smell_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/taste_smell_choose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dependence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="l.我不喜歡對吸菸有依賴性。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*l.我不喜歡對吸菸有依賴性*Dependence/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dependence_chooose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/dependence_chooose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常同意"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點同意"
+                            android:id="@+id/dependence_chooose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有點不同意"
+                            android:id="@+id/dependence_chooose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="非常不同意"
+                            android:id="@+id/dependence_chooose4"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="確認"
+                    android:background="@drawable/btnstyle"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

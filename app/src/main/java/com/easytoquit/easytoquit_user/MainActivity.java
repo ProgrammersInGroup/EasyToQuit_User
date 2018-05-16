@@ -24,6 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.easytoquit.easytoquit_user.Insertion.InsertProfile;
+import com.easytoquit.easytoquit_user.Insertion.question_stop_smoking;
+import com.easytoquit.easytoquit_user.Insertion.why_you_smoking;
 import com.easytoquit.easytoquit_user.RetreiveData.User;
 import com.easytoquit.easytoquit_user.mFragment.Assessment;
 import com.easytoquit.easytoquit_user.mFragment.Health_Stop;
@@ -101,6 +103,13 @@ public class MainActivity extends AppCompatActivity
                     .commit();
             // new AlertDialog.Builder(this).setMessage("這是打開很多次了").show();
             //讀出檔案
+
+            if (number==1){
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame, new question_stop_smoking())
+                        .commit();
+            }
+
             FileInputStream fis = null;
             StringBuilder sb = new StringBuilder();
             try{
@@ -266,6 +275,16 @@ public class MainActivity extends AppCompatActivity
                         .replace(R.id.content_frame, new Assessment())
                         .commit();
                 break;
+            case R.id.nav_question_stop_smoking:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame, new question_stop_smoking())
+                        .commit();
+                break;
+            case R.id.nav_why_you_smoking:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame, new why_you_smoking())
+                        .commit();
+                break;
             case R.id.nav_health_stop:
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_frame, new Health_Stop())
@@ -332,10 +351,10 @@ public class MainActivity extends AppCompatActivity
             //計算目前已過秒數
             Long seconds = (spentTime/1000) % 60;
             //time.setText(minius+":"+seconds);
-            if(seconds % 10 == 0){
-                Notification.showFullScreen(MainActivity.this);
-                //Log.d("aa", "yaaaaa");
-            }
+//            if(seconds % 10 == 0){
+//                Notification.showFullScreen(MainActivity.this);
+//                //Log.d("aa", "yaaaaa");
+//            }
             handler.postDelayed(this, 1000);
         }
     };

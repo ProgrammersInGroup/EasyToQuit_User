@@ -17,6 +17,14 @@
             android:icon="@drawable/assessment"
             android:title="評估自我" />
         <item
+            android:id="@+id/nav_question_stop_smoking"
+           android:icon="@drawable/assessment"
+            android:title="測驗吸菸指數" />
+        <item
+            android:id="@+id/nav_why_you_smoking"
+            android:icon="@drawable/assessment"
+            android:title="測驗戒菸指數" />
+        <item
             android:id="@+id/nav_health_stop"
             android:icon="@drawable/health_stop"
             android:title="健康小站" />

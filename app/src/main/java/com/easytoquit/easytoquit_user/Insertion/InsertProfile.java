@@ -43,8 +43,6 @@ public class InsertProfile extends AppCompatActivity {
     String BitmapString;
     Bitmap mBitmapImage;
     CircleImageView add, profile_image;
-    private static final String data = "DATA";
-    private static final String numberField = "number";
     private static final String TAG = "kkkkkkkkkk";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -182,6 +180,7 @@ public class InsertProfile extends AppCompatActivity {
                     /*Intent intent2 = getIntent();
                     intent2.putExtra("id", 1);*/
                     Intent intent = new Intent(InsertProfile.this, InsertAssessment.class);
+                    intent.putExtra("number", 1);
                     startActivity(intent);
                 }
 

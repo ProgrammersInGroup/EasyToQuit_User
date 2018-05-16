@@ -1,0 +1,1559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.easytoquit.easytoquit_user.Insertion.why_you_smoking">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            /*你為什麼吸菸*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/why_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你為什麼吸菸？："
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/spirit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="a. 我吸菸是為了提振精神。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*a. 我吸菸是為了提振精神。spirit*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spirit_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/spirit_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/spirit_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/spirit_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/spirit_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/spirit_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pleasure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="b. 掌控香菸是吸菸的樂趣之一。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*b. 掌控香菸是吸菸的樂趣之一。pleasure*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pleasure_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/pleasure_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/pleasure_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/pleasure_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/pleasure_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/pleasure_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/happy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="c.吸菸是一件愉快而放鬆的事情。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*c.吸菸是一件愉快而放鬆的事情。happy*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/happy_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/happy_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/happy_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/happy_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/happy_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/happy_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/angry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="d.當我對某事生氣時會抽煙。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*d.當我對某事生氣時會抽煙。angry*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/angry_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/angry_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/angry_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/angry_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/angry_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/angry_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/unbearable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="e.在抽完一根煙後到再抽下一根之前，我覺得幾乎無法忍受。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*e.在抽完一根煙後到再抽下一根之前，我覺得幾乎無法忍受。unbearable*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unbearable_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/unbearable_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/unbearable_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/unbearable_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/unbearable_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/unbearable_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/no_perception"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="f.我會自動的抽菸，縱使沒有知覺到自己在抽菸。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*f.我會自動的抽菸，縱使沒有知覺到自己在抽菸 No＿perception*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/no_perception_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/no_perception_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/no_perception_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/no_perception_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/no_perception_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/no_perception_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/stimulate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="g.我吸菸是為了刺激，振作自己。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*g.我吸菸是為了刺激，振作自己 stimulate*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/stimulate_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/stimulate_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/stimulate_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/stimulate_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/stimulate_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/stimulate_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/moment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="h.吸菸的部分樂趣來自於我點燃香菸的那一刻。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*h.吸菸的部分樂趣來自於我點燃香菸的那一刻 moment*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/moment_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/moment_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/moment_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/moment_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/moment_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/moment_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/madeyouhappy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="i.我發現吸菸是另人心情愉悅的。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*i.我發現吸菸是另人心情愉悅的 madeyouhappy*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/madeyouhappy_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/madeyouhappy_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/madeyouhappy_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/madeyouhappy_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/madeyouhappy_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/madeyouhappy_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/irritability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="j.當我對某事感到不適或煩燥時，我會吸菸。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*j.當我對某事感到不適或煩燥時，我會吸菸 irritability*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/irritability_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/irritability_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/irritability_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/irritability_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/irritability_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/irritability_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/clearperception"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="k.當我沒有在抽菸時，我非常清楚的知覺這件事。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*k.當我沒有在抽菸時，我非常清楚的知覺這件事 clearperception*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/clearperception_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/clearperception_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/clearperception_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/clearperception_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/clearperception_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/clearperception_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/another"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="l.忘記煙灰缸還有點燃的香菸，我卻又點燃另一根香菸。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*l.忘記煙灰缸還有點燃的香菸，我卻又點燃另一根香菸 another*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/another_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/another_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/another_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/another_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/another_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/another_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/better"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="m.我吸菸是為了讓自己精神更好。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*m.我吸菸是為了讓自己精神更好 better*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/better_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/better_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/better_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/better_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/better_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/better_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/joy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="n.當我吸菸時，看我呼出的煙霧也是一種樂趣。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*n.當我吸菸時，看我呼出的煙霧也是一種樂趣，joy*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/joy_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/joy_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/joy_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/joy_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/joy_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/joy_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/release"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="o.當我處於舒適或放鬆情境時，我最想吸菸。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*o.當我處於舒適或放鬆情境時，我最想吸菸，release*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/release_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/release_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/release_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/release_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/release_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/release_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/exclude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="p.當我感到憂鬱或想要排除心思及憂慮時，我會吸菸。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*p.當我感到憂鬱或想要排除心思及憂慮時，我會吸菸 exclude*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/exclude_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/exclude_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/exclude_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/exclude_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/exclude_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/exclude_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/desire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="q.當我短暫時間沒抽煙，我會非常渴望吸菸。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*q.當我短暫時間沒抽煙，我會非常渴望吸菸 desire*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/desire_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/desire_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/desire_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/desire_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/desire_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/desire_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/whytime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30sp"
+                        android:text="r.發現香菸在我嘴裡。去忘了什麼時候點燃的。"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </LinearLayout>/*r.發現香菸在我嘴裡。去忘了什麼時候點燃的 whytime*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/whytime_choose"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/whytime_choose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="總是"
+                            android:textSize="25sp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="經常"
+                            android:id="@+id/whytime_choose2"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="偶爾"
+                            android:id="@+id/whytime_choose3"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="很少"
+                            android:id="@+id/whytime_choose4"
+                            android:textSize="25sp"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="從不"
+                            android:id="@+id/whytime_choose5"
+                            android:textSize="25sp"/>
+                    </RadioGroup>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="確認"
+                    android:background="@drawable/btnstyle"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

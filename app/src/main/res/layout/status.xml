@@ -245,6 +245,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/aeisumcolor"
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
                     android:layout_margin="10sp"
@@ -254,6 +255,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                 <TextView
+                    android:id="@+id/sumaei_layout_forhealth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10sp"
@@ -273,6 +275,7 @@
                     />
 
                 <TextView
+                    android:id="@+id/sumaei_layout_score"
                     android:layout_width="0dp"
                     android:singleLine="true"
                     android:gravity="right"
@@ -295,6 +298,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/sumbfj_layout_forexample"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10sp"
@@ -314,6 +318,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/sumbfj_layout_score"
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:gravity="right"
@@ -336,6 +341,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/sumcgk_layout_forpretty"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10sp"
@@ -355,6 +361,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/sumcgk_layout_score"
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:gravity="right"
@@ -377,6 +384,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/sumdhl_layout_forcontrol"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10sp"
@@ -396,6 +404,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/sumdhl_layout_score"
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:gravity="right"
@@ -451,6 +460,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/stimulate_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15sp"
@@ -470,6 +480,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/stimulate_score"
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:gravity="right"
@@ -491,6 +502,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/control_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15sp"
@@ -510,6 +522,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/control_score"
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:gravity="right"
@@ -531,6 +544,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/relax_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15sp"
@@ -552,7 +566,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-
+                        android:id="@+id/relax_score"
                         android:text="分"
                         android:singleLine="true"
                         android:gravity="right"
@@ -572,6 +586,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/emotional＿support_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15sp"
@@ -591,6 +606,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/emotional＿support_score"
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:gravity="right"
@@ -612,6 +628,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/desire_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15sp"
@@ -631,6 +648,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/desire_score"
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:layout_weight="1"
@@ -652,6 +670,7 @@
                     tools:layout_editor_absoluteX="10dp">
 
                     <TextView
+                        android:id="@+id/habits_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15sp"
@@ -671,6 +690,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/habits_score"
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:gravity="right"
