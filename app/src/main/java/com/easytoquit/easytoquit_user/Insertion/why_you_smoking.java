@@ -1,7 +1,7 @@
 package com.easytoquit.easytoquit_user.Insertion;
 
 import android.app.Fragment;
-import android.content.Intent;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -9,14 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
-import com.easytoquit.easytoquit_user.RetreiveData.Stop_Smoking_Really;
 import com.easytoquit.easytoquit_user.RetreiveData.Why_smoking;
+import com.easytoquit.easytoquit_user.mFragment.Status;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -677,9 +675,12 @@ public class why_you_smoking extends Fragment {
 
             myRef.child("為什麼戒菸？").setValue(why_smoking);
 
-            Intent intent = new Intent(getActivity(), MainActivity.class);
+            /*Intent intent = new Intent(getActivity(), MainActivity.class);
             intent.putExtra("id", 1);
-            startActivity(intent);
+            startActivity(intent);*/
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.replace(R.id.content_frame, new Status());
+            ft.commit();
         }
 
 

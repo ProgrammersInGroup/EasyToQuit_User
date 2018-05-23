@@ -29,11 +29,9 @@ import com.easytoquit.easytoquit_user.Insertion.why_you_smoking;
 import com.easytoquit.easytoquit_user.RetreiveData.User;
 import com.easytoquit.easytoquit_user.mFragment.Assessment;
 import com.easytoquit.easytoquit_user.mFragment.Health_Stop;
-import com.easytoquit.easytoquit_user.mFragment.History;
 import com.easytoquit.easytoquit_user.mFragment.Information;
 import com.easytoquit.easytoquit_user.mFragment.Profile;
 import com.easytoquit.easytoquit_user.mFragment.Status;
-import com.easytoquit.easytoquit_user.mFragment.Tips;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -97,16 +95,18 @@ public class MainActivity extends AppCompatActivity
                     .show();
             // new AlertDialog.Builder(this).setMessage("這是第一次打開").show();
         } else {
-            settings.edit().putInt(data,1).commit();
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new Status())
-                    .commit();
+
             // new AlertDialog.Builder(this).setMessage("這是打開很多次了").show();
             //讀出檔案
 
             if (number==1){
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_frame, new question_stop_smoking())
+                        .commit();
+            }else{
+                settings.edit().putInt(data,1).commit();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame, new Status())
                         .commit();
             }
 
@@ -295,11 +295,11 @@ public class MainActivity extends AppCompatActivity
                         .replace(R.id.content_frame, new Information())
                         .commit();
                 break;
-            case R.id.nav_tips:
+            /*case R.id.nav_tips:
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_frame, new Tips())
                         .commit();
-                break;
+                break;*/
             /*case R.id.nav_history:
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_frame, new History())
@@ -347,6 +347,7 @@ public class MainActivity extends AppCompatActivity
             Long month = (spentTime/1000/3600/24/12)+1;
             if(month % 2 == 0) {
                 Log.d("aa", "month = " + month);
+                Notification.showFullScreen(MainActivity.this);
             }
             //計算目前已過秒數
             Long seconds = (spentTime/1000) % 60;

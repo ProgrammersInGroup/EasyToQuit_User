@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            /*你為什麼吸菸*/
+            <!--你為什麼吸菸-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -29,7 +29,6 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:orientation="vertical"
-                android:padding="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +51,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="a. 我吸菸是為了提振精神。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
@@ -136,13 +134,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="b. 掌控香菸是吸菸的樂趣之一。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*b. 掌控香菸是吸菸的樂趣之一。pleasure*/
+            </LinearLayout><!--b. 掌控香菸是吸菸的樂趣之一。pleasure-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -220,13 +217,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="c.吸菸是一件愉快而放鬆的事情。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*c.吸菸是一件愉快而放鬆的事情。happy*/
+            </LinearLayout><!--c.吸菸是一件愉快而放鬆的事情。happy-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -304,13 +300,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="d.當我對某事生氣時會抽煙。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*d.當我對某事生氣時會抽煙。angry*/
+            </LinearLayout><!--d.當我對某事生氣時會抽煙。angry-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -388,13 +383,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="e.在抽完一根煙後到再抽下一根之前，我覺得幾乎無法忍受。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*e.在抽完一根煙後到再抽下一根之前，我覺得幾乎無法忍受。unbearable*/
+            </LinearLayout><!--e.在抽完一根煙後到再抽下一根之前，我覺得幾乎無法忍受。unbearable-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -472,13 +466,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="f.我會自動的抽菸，縱使沒有知覺到自己在抽菸。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*f.我會自動的抽菸，縱使沒有知覺到自己在抽菸 No＿perception*/
+            </LinearLayout><!--f.我會自動的抽菸，縱使沒有知覺到自己在抽菸 No＿perception-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -556,13 +549,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="g.我吸菸是為了刺激，振作自己。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*g.我吸菸是為了刺激，振作自己 stimulate*/
+            </LinearLayout><!--g.我吸菸是為了刺激，振作自己 stimulate-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -640,13 +632,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="h.吸菸的部分樂趣來自於我點燃香菸的那一刻。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*h.吸菸的部分樂趣來自於我點燃香菸的那一刻 moment*/
+            </LinearLayout><!--h.吸菸的部分樂趣來自於我點燃香菸的那一刻 moment-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -724,13 +715,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="i.我發現吸菸是另人心情愉悅的。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*i.我發現吸菸是另人心情愉悅的 madeyouhappy*/
+            </LinearLayout><!--i.我發現吸菸是另人心情愉悅的 madeyouhappy-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -808,13 +798,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="j.當我對某事感到不適或煩燥時，我會吸菸。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*j.當我對某事感到不適或煩燥時，我會吸菸 irritability*/
+            </LinearLayout><!--j.當我對某事感到不適或煩燥時，我會吸菸 irritability-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -892,13 +881,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="k.當我沒有在抽菸時，我非常清楚的知覺這件事。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*k.當我沒有在抽菸時，我非常清楚的知覺這件事 clearperception*/
+            </LinearLayout><!--k.當我沒有在抽菸時，我非常清楚的知覺這件事 clearperception-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -976,13 +964,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="l.忘記煙灰缸還有點燃的香菸，我卻又點燃另一根香菸。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*l.忘記煙灰缸還有點燃的香菸，我卻又點燃另一根香菸 another*/
+            </LinearLayout><!--l.忘記煙灰缸還有點燃的香菸，我卻又點燃另一根香菸 another-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1060,13 +1047,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="m.我吸菸是為了讓自己精神更好。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*m.我吸菸是為了讓自己精神更好 better*/
+            </LinearLayout><!--m.我吸菸是為了讓自己精神更好 better-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1144,13 +1130,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="n.當我吸菸時，看我呼出的煙霧也是一種樂趣。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*n.當我吸菸時，看我呼出的煙霧也是一種樂趣，joy*/
+            </LinearLayout><!--n.當我吸菸時，看我呼出的煙霧也是一種樂趣，joy-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1228,13 +1213,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="o.當我處於舒適或放鬆情境時，我最想吸菸。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*o.當我處於舒適或放鬆情境時，我最想吸菸，release*/
+            </LinearLayout><!--o.當我處於舒適或放鬆情境時，我最想吸菸，release-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1312,13 +1296,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="p.當我感到憂鬱或想要排除心思及憂慮時，我會吸菸。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*p.當我感到憂鬱或想要排除心思及憂慮時，我會吸菸 exclude*/
+            </LinearLayout><!--p.當我感到憂鬱或想要排除心思及憂慮時，我會吸菸 exclude-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1396,13 +1379,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="q.當我短暫時間沒抽煙，我會非常渴望吸菸。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*q.當我短暫時間沒抽煙，我會非常渴望吸菸 desire*/
+            </LinearLayout><!--q.當我短暫時間沒抽煙，我會非常渴望吸菸 desire-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1480,13 +1462,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="r.發現香菸在我嘴裡。去忘了什麼時候點燃的。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*r.發現香菸在我嘴裡。去忘了什麼時候點燃的 whytime*/
+            </LinearLayout><!--r.發現香菸在我嘴裡。去忘了什麼時候點燃的 whytime-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

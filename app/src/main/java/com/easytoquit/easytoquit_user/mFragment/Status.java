@@ -21,8 +21,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import org.w3c.dom.Text;
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -166,7 +164,6 @@ public class Status extends Fragment {
         DatabaseReference myRef = database.getReference("usersAssessment/" + sb +"/評估資料/"+"第一次評估資料");
 
         DatabaseReference myRef1 = database.getReference("usersAssessment/" + sb +"/戒菸指數");
-
         DatabaseReference myRef2 = database.getReference("usersAssessment/" + sb +"/為什麼戒菸？");
 
         myRef.addValueEventListener(new ValueEventListener() {
@@ -312,7 +309,6 @@ public class Status extends Fragment {
                 Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
             }
         });
-
 
 
         return view;

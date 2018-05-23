@@ -2,7 +2,6 @@ package com.easytoquit.easytoquit_user.Insertion;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -10,22 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
-import com.easytoquit.easytoquit_user.RetreiveData.SmokeStatus;
 import com.easytoquit.easytoquit_user.RetreiveData.Stop_Smoking_Really;
-import com.easytoquit.easytoquit_user.RetreiveData.Why_smoking;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -425,9 +415,9 @@ public class question_stop_smoking extends Fragment {
 //                intent.putExtra("id", 1);
 //                startActivity(intent);
 
-                why_you_smoking why_you_smoking = new why_you_smoking();
+                //why_you_smoking why_you_smoking = new why_you_smoking();
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.nav_question_stop_smoking,why_you_smoking);
+                ft.replace(R.id.content_frame, new why_you_smoking());
                 ft.commit();
 
             }

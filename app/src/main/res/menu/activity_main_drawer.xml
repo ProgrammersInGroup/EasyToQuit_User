@@ -18,16 +18,16 @@
             android:title="評估自我" />
         <item
             android:id="@+id/nav_question_stop_smoking"
-           android:icon="@drawable/assessment"
+           android:icon="@drawable/smoking"
             android:title="測驗吸菸指數" />
         <item
             android:id="@+id/nav_why_you_smoking"
-            android:icon="@drawable/assessment"
+            android:icon="@drawable/no_smoking"
             android:title="測驗戒菸指數" />
         <item
             android:id="@+id/nav_health_stop"
-            android:icon="@drawable/health_stop"
-            android:title="健康小站" />
+            android:icon="@drawable/chat"
+            android:title="意見回饋" />
         <!--<item
             android:id="@+id/nav_meeting"
             android:icon="@drawable/meeting"
@@ -36,10 +36,10 @@
             android:id="@+id/nav_information"
             android:icon="@drawable/information"
             android:title="衛教資訊" />
-        <item
+        <!--<item
             android:id="@+id/nav_tips"
             android:icon="@drawable/tips"
-            android:title="戒菸撇步" />
+            android:title="戒菸撇步" />-->
         <!--<item
             android:id="@+id/nav_history"
             android:icon="@drawable/history"

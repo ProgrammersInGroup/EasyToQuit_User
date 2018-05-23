@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            /*你真的有心想要戒菸嗎？*/
+            <!--你真的有心想要戒菸嗎？-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -52,13 +52,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="a. 吸菸可能會讓我罹患嚴重的疾病。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*a. 吸煙可能會讓我罹患嚴重的疾病。choose_stop_smoke*/
+            </LinearLayout><!--a. 吸煙可能會讓我罹患嚴重的疾病。choose_stop_smoke-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -132,13 +131,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="b. 我吸菸是給別人做一個不良的典範。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*b. 我吸菸是給別人做一個不良的典範。typical*/
+            </LinearLayout><!--b. 我吸菸是給別人做一個不良的典範。typical-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -212,13 +210,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="c.我認為吸煙是一種散漫的行為習慣。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*c.我認為吸煙是一種散漫的行為習慣。habits*/
+            </LinearLayout><!--c.我認為吸煙是一種散漫的行為習慣。habits-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -292,13 +289,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="d.控制吸菸對我來說是一種挑戰。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*d.控制吸菸對我來說是一種挑戰。challenge*/
+            </LinearLayout><!--d.控制吸菸對我來說是一種挑戰。challenge-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -372,13 +368,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="e.吸菸會引起呼吸急促。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*e.吸菸會引起呼吸急促。breathe*/
+            </LinearLayout><!--e.吸菸會引起呼吸急促。breathe-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -452,13 +447,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="f.如我戒菸可能也會影響別人戒菸。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*f.如我戒菸可能也會影響別人戒菸。influences*/
+            </LinearLayout><!--f.如我戒菸可能也會影響別人戒菸。influences-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -532,13 +526,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="g.吸菸會造成衣服及其他個人物品的污染。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*g.吸菸會造成衣服及其他個人物品的污染。pollution*/
+            </LinearLayout><!--g.吸菸會造成衣服及其他個人物品的污染。pollution-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -612,13 +605,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="h.戒菸表示我有意志力。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*h.戒菸表示我有意志力。willpower*/
+            </LinearLayout><!--h.戒菸表示我有意志力。willpower-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -692,13 +684,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="i.吸菸會為害我的健康。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*i.吸菸會危害我的健康health*/
+            </LinearLayout><!--i.吸菸會危害我的健康health-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -772,13 +763,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="j.我如果吸菸會影響親近我的人際需吸菸。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*j.我如果吸菸會影響親近我的人際需吸菸closer*/
+            </LinearLayout><!--j.我如果吸菸會影響親近我的人際需吸菸closer-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -852,13 +842,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="k.如果我戒菸，可以改善我的味覺及嗅覺。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*k.如果我戒菸，可以改善我的味覺及嗅覺。taste_smell*/
+            </LinearLayout><!--k.如果我戒菸，可以改善我的味覺及嗅覺。taste_smell-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -932,13 +921,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30sp"
                         android:text="l.我不喜歡對吸菸有依賴性。"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
 
                 </LinearLayout>
-            </LinearLayout>/*l.我不喜歡對吸菸有依賴性*Dependence/
+            </LinearLayout><!--l.我不喜歡對吸菸有依賴性Dependence-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
