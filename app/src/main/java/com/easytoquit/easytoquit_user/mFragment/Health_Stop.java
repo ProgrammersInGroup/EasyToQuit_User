@@ -86,6 +86,7 @@ public class Health_Stop extends Fragment {
             FirebaseDatabase database = FirebaseDatabase.getInstance("https://wedproject-d750d.firebaseio.com/");
             DatabaseReference myRef = database.getReference("Q&A/" + sb);
             myRef.child("使用者問題").setValue(test.getText().toString());
+
             Intent intent = new Intent();
             intent.setClass(getActivity(), MainActivity.class);
             startActivity(intent);
