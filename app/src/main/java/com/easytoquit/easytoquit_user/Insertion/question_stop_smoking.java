@@ -1,7 +1,7 @@
 package com.easytoquit.easytoquit_user.Insertion;
 
 import android.app.Fragment;
-import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
 import com.easytoquit.easytoquit_user.RetreiveData.Stop_Smoking_Really;
 import com.google.firebase.database.DatabaseReference;
@@ -411,14 +412,31 @@ public class question_stop_smoking extends Fragment {
                 );
                 myRef.child("戒菸指數").setValue(Stopsmokint);
 
-//                Intent intent = new Intent(getActivity(), MainActivity.class);
-//                intent.putExtra("id", 1);
-//                startActivity(intent);
+                /*Intent intent = new Intent(getActivity(), MainActivity.class);
+                intent.putExtra("id", 1);
+                startActivity(intent);*/
 
-                //why_you_smoking why_you_smoking = new why_you_smoking();
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.content_frame, new why_you_smoking());
-                ft.commit();
+
+            int number;
+            Intent intent1 = getActivity().getIntent();
+            number = intent1.getIntExtra("number", 2);
+            Log.e("idontwantit", "number: "+number);
+            if(number ==3){
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                intent.putExtra("number", 10);
+                startActivity(intent);
+            }
+            if(number ==2){
+                Intent intent2 = getActivity().getIntent();
+                intent2.putExtra("id", 3);
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                intent.putExtra("id", 3);
+                startActivity(intent);
+            }
+
+                /*FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, new Status());
+                ft.commit();*/
 
             }
 
@@ -428,7 +446,7 @@ public class question_stop_smoking extends Fragment {
     public void onViewCreated (View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
 
-        getActivity().setTitle("你為什麼吸煙？");
+        getActivity().setTitle("你為什麼吸菸？");
 
     }
 }

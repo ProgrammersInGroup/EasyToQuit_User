@@ -1,36 +1,28 @@
 package com.easytoquit.easytoquit_user.mFragment;
 
 import android.app.Fragment;
+import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.MultiFormatWriter;
-import com.google.zxing.WriterException;
-import com.google.zxing.common.BitMatrix;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-
-import static android.content.ContentValues.TAG;
 
 /**
  * Created by Polaris0712 on 11/01/2018.
@@ -68,7 +60,7 @@ public class Health_Stop extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        getActivity().setTitle("問題Q&A");
+        getActivity().setTitle("意見回饋");
 
     }
 
@@ -97,6 +89,23 @@ public class Health_Stop extends Fragment {
             Intent intent = new Intent();
             intent.setClass(getActivity(), MainActivity.class);
             startActivity(intent);
+
+            new AlertDialog.Builder(getActivity())
+                    .setMessage("確認送出！")
+                    .setPositiveButton("確定", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            FragmentTransaction ft = getFragmentManager().beginTransaction();
+                            ft.replace(R.id.content_frame, new Status());
+                            ft.commit();
+                            //Toast.makeText(getActivity().getApplicationContext(), "我已經了解了！", Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .show();
         }
+
+
     };
+
+
 }

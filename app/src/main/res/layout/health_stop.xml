@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="40px">
 
 
         <TextView
@@ -17,7 +18,8 @@
             android:layout_height="wrap_content"
             android:textSize="32dp"
             android:layout_margin="15px"
-            android:text="意見回饋Q &amp; A" />
+            android:text="意見回饋"
+            android:textAlignment="center"/>
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView"

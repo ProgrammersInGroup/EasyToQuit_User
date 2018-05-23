@@ -675,12 +675,44 @@ public class why_you_smoking extends Fragment {
 
             myRef.child("為什麼戒菸？").setValue(why_smoking);
 
-            /*Intent intent = new Intent(getActivity(), MainActivity.class);
-            intent.putExtra("id", 1);
-            startActivity(intent);*/
+
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, new Status());
             ft.commit();
+
+
+            /*int number;
+            Intent intent1 = getActivity().getIntent();
+            number = intent1.getIntExtra("number", 4);
+            Log.e("idontwantit", "number: "+number);
+            if(number ==4){
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, new Status());
+                ft.commit();
+                *//*Intent intent = new Intent(getActivity(), MainActivity.class);
+                intent.putExtra("number", 10);
+                Intent intent2 = getActivity().getIntent();
+                intent2.putExtra("id", 1);
+                startActivity(intent);*//*
+            }
+            if(number ==3){
+                Intent intent2 = getActivity().getIntent();
+                intent2.putExtra("id", 1);
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                intent.putExtra("id", 1);
+                startActivity(intent);
+            }*/
+
+
+           /* int number;
+            Intent intent1 = getActivity().getIntent();
+            number = intent1.getIntExtra("number", 3);
+            Log.e("aa", "number_Now:"+ number);
+            intent1.putExtra("number", 4);
+
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.replace(R.id.content_frame, new Status());
+            ft.commit();*/
         }
 
 

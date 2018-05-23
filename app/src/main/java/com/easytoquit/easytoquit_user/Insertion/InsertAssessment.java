@@ -7,15 +7,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
 import com.easytoquit.easytoquit_user.RetreiveData.SmokeStatus;
-import com.easytoquit.easytoquit_user.RetreiveData.Stop_Smoking_Really;
-import com.easytoquit.easytoquit_user.RetreiveData.Why_smoking;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -99,10 +95,10 @@ public class InsertAssessment extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(number ==1){
-                    /*Intent intent2 = getIntent();
-                    intent2.putExtra("id", 1);*/
+                    Intent intent2 = getIntent();
+                    intent2.putExtra("id", 2);
                     Intent intent = new Intent(InsertAssessment.this, MainActivity.class);
-                    intent.putExtra("id", 1);
+                    intent.putExtra("id", 2);
                     startActivity(intent);
                 }
 //                Intent intent = new Intent(InsertAssessment.this, MainActivity.class);

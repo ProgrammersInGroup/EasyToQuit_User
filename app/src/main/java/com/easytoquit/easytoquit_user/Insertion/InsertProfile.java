@@ -18,12 +18,8 @@ import android.widget.Toast;
 import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
 import com.easytoquit.easytoquit_user.RetreiveData.User;
-import com.easytoquit.easytoquit_user.mFragment.Profile;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -177,8 +173,8 @@ public class InsertProfile extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(number ==1){
-                    /*Intent intent2 = getIntent();
-                    intent2.putExtra("id", 1);*/
+                    Intent intent2 = getIntent();
+                    intent2.putExtra("id", 1);
                     Intent intent = new Intent(InsertProfile.this, InsertAssessment.class);
                     intent.putExtra("number", 1);
                     startActivity(intent);

@@ -1,7 +1,7 @@
 package com.easytoquit.easytoquit_user.mFragment;
 
 import android.app.Fragment;
-import android.content.Intent;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -10,15 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.easytoquit.easytoquit_user.MainActivity;
 import com.easytoquit.easytoquit_user.R;
 import com.easytoquit.easytoquit_user.RetreiveData.SmokeStatus;
-import com.easytoquit.easytoquit_user.RetreiveData.Stop_Smoking_Really;
-import com.easytoquit.easytoquit_user.RetreiveData.Why_smoking;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -54,7 +49,7 @@ public class Assessment extends Fragment {
         //edt_assessment_week_smoking=(EditText)view.findViewById(R.id.edt_assessment_week_smoking);
         edt_assessment_quit_smoking_date=(EditText)view.findViewById(R.id.edt_assessment_quit_smoking_date);
         edt_assessment_save_money=(EditText)view.findViewById(R.id.edt_assessment_save_money);
-        sure =(Button)view.findViewById(R.id.btn_sure);
+        sure =(Button)view.findViewById(R.id.back);
         sure.setOnClickListener(onclick);
 
         return view;
@@ -98,9 +93,9 @@ public class Assessment extends Fragment {
                         edt_assessment_save_money.getText().toString());
                 myRef.child("評估資料").child("第一次評估資料").setValue(smokeStatus);
 
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                intent.putExtra("id", 1);
-                startActivity(intent);
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, new Status());
+                ft.commit();
             }
         }
     };

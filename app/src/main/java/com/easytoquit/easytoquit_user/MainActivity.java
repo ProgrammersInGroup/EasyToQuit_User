@@ -95,19 +95,28 @@ public class MainActivity extends AppCompatActivity
                     .show();
             // new AlertDialog.Builder(this).setMessage("這是第一次打開").show();
         } else {
-
-            // new AlertDialog.Builder(this).setMessage("這是打開很多次了").show();
-            //讀出檔案
-
-            if (number==1){
-                fragmentManager.beginTransaction()
-                        .replace(R.id.content_frame, new question_stop_smoking())
-                        .commit();
-            }else{
-                settings.edit().putInt(data,1).commit();
+            settings.edit().putInt(data, 1).commit();
+            if(number == 1) {
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_frame, new Status())
                         .commit();
+                // new AlertDialog.Builder(this).setMessage("這是打開很多次了").show();
+                //讀出檔案
+                settings.edit().putInt(data, 2).commit();
+            }
+
+            if (number==2){
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame, new question_stop_smoking())
+                        .commit();
+                settings.edit().putInt(data, 3).commit();
+            }
+
+            if (number==3){
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame, new why_you_smoking())
+                        .commit();
+                settings.edit().putInt(data, 1).commit();
             }
 
             FileInputStream fis = null;
@@ -359,4 +368,6 @@ public class MainActivity extends AppCompatActivity
             handler.postDelayed(this, 1000);
         }
     };
+
+
 }
