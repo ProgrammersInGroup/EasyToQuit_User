@@ -215,212 +215,6 @@
             </LinearLayout> <!--&lt;!&ndash; 目前已省金額 &ndash;&gt;-->
 
             <LinearLayout
-                android:id="@+id/linearLayout5"
-                android:layout_width="match_parent"
-                android:layout_height="360sp"
-                android:layout_margin="10sp"
-                android:layout_marginTop="16dp"
-                android:orientation="vertical"
-                android:background="@drawable/border"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50sp"
-                    android:layout_margin="5sp"
-                    android:layout_marginTop="5dp"
-
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15sp"
-                        android:text="戒菸指數"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/aeisumcolor"
-                    android:layout_width="match_parent"
-                    android:layout_height="50sp"
-                    android:layout_margin="10sp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/border"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="10dp">
-
-                <TextView
-                    android:id="@+id/sumaei_layout_forhealth"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="為了健康："
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:id="@+id/sumaei_layout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40sp"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    />
-
-                <TextView
-                    android:id="@+id/sumaei_layout_score"
-                    android:layout_width="0dp"
-                    android:singleLine="true"
-                    android:gravity="right"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="35sp"
-                    android:text="分"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
-                </LinearLayout>/*為了健康 */
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50sp"
-                    android:layout_margin="10sp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/border"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="10dp">
-
-                    <TextView
-                        android:id="@+id/sumbfj_layout_forexample"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10sp"
-                        android:text="為了典範："
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-
-                    <TextView
-                        android:id="@+id/sumbfj_layout"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
-
-                    <TextView
-                        android:id="@+id/sumbfj_layout_score"
-                        android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="35sp"
-                        android:text="分"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*為了典範 */
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50sp"
-                    android:layout_margin="10sp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/border"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="10dp">
-
-                    <TextView
-                        android:id="@+id/sumcgk_layout_forpretty"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10sp"
-                        android:text="為了美感："
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-
-                    <TextView
-                        android:id="@+id/sumcgk_layout"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
-
-                    <TextView
-                        android:id="@+id/sumcgk_layout_score"
-                        android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="35sp"
-                        android:text="分"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*為了美感 */
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50sp"
-                    android:layout_margin="10sp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/border"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="10dp">
-
-                    <TextView
-                        android:id="@+id/sumdhl_layout_forcontrol"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10sp"
-                        android:text="為了控制："
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-
-                    <TextView
-                        android:id="@+id/sumdhl_layout"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="40sp"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
-
-                    <TextView
-                        android:id="@+id/sumdhl_layout_score"
-                        android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="35sp"
-                        android:text="分"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*為了控制 */
-
-
-            </LinearLayout>
-
-            <LinearLayout
 
                 android:layout_width="match_parent"
                 android:layout_height="500sp"
@@ -701,6 +495,345 @@
                         android:textSize="25sp"
                         android:layout_gravity="center"/>
                 </LinearLayout>/*習慣性 */
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="530sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:id="@+id/explan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="  若以上幾項得分超過11分或更高,表示此項為你的滿足感來源："
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                       />
+                <TextView
+                    android:id="@+id/explan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="1. 刺激感：表示你需要以香菸刺激自己,認為香菸可以讓你更清醒、重整活力。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="2. 操控感：對事情有主控權令你有滿足感。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="3. 愉悅/放鬆感：認為可以從吸菸中獲得實際、真正的愉悅感。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="4. 精神支柱：遇到壓力或不舒服，利用香菸當作一種精神支柱。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="5. 對香菸有很強烈的依賴感。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="6. 因為習慣性而吸菸。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="360sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="5dp"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="戒菸指數"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/aeisumcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/sumaei_layout_forhealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="為了健康："
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/sumaei_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/sumaei_layout_score"
+                    android:layout_width="0dp"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35sp"
+                    android:text="分"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+                </LinearLayout>/*為了健康 */
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:id="@+id/sumbfj_layout_forexample"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="為了典範："
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/sumbfj_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/sumbfj_layout_score"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*為了典範 */
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:id="@+id/sumcgk_layout_forpretty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="為了美感："
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/sumcgk_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/sumcgk_layout_score"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*為了美感 */
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <TextView
+                        android:id="@+id/sumdhl_layout_forcontrol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="為了控制："
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/sumdhl_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/sumdhl_layout_score"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35sp"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>/*為了控制 */
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450sp"
+                android:layout_margin="10sp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/explan2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="  若以上幾項得分超過9分或更高,表示此項為你最想戒菸的原因："
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan2.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="1. 健康：一想到吸菸對健康的危害，你就會很想馬上戒菸。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan2.3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="2. 典範：想要給其他人建立一個良好的典範。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan2.4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="3. 美感： 知道吸菸會帶來不愉悅的困擾，像是牙齒焦黃、呼吸有臭味"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/explan2.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="4. 控制感： 表示你會無法控制吸菸而感到困擾，如果你有意願挑戰自己，會使你想要戒菸。"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    />
 
             </LinearLayout>
 
