@@ -7,7 +7,10 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="0dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -27,31 +30,30 @@
                     android:id="@+id/txt_smoking_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="15sp"
                     android:text="菸齡"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/show_smoking_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="90sp"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    />
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/unit_smoking_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="110sp"
                     android:text="年"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
+                    android:textSize="25sp" />
 
             </LinearLayout> <!-- 菸齡 -->
 
@@ -111,33 +113,31 @@
                     android:id="@+id/txt_date_smoking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="15sp"
                     android:text="這一天內平均每天吸"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/show_date_smoking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="10sp"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    />
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/unit_date_smoking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
+                    android:layout_gravity="center"
 
+                    android:layout_marginLeft="10sp"
                     android:text="支"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    />
+                    android:textSize="25sp" />
             </LinearLayout> <!-- 一天吸菸量 -->
 
             <LinearLayout
@@ -154,21 +154,20 @@
                     android:id="@+id/txt_quit_smoking_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="15sp"
                     android:text="戒菸日"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/show_quit_smoking_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="80sp"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    />
+                    android:textSize="25sp" />
 
             </LinearLayout> <!-- 戒菸日 -->
 
@@ -186,32 +185,31 @@
                     android:id="@+id/txt_smoking_money"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="15sp"
                     android:text="本月菸量價格"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/show_smoking_money"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="45sp"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    />
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/unit_smoking_money"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40sp"
+                    android:layout_gravity="center"
 
+                    android:layout_marginLeft="40sp"
                     android:text="元"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
+                    android:textSize="25sp" />
             </LinearLayout> <!--&lt;!&ndash; 目前已省金額 &ndash;&gt;-->
 
             <LinearLayout
@@ -220,8 +218,8 @@
                 android:layout_height="500sp"
                 android:layout_margin="10sp"
                 android:layout_marginTop="16dp"
-                android:orientation="vertical"
                 android:background="@drawable/border"
+                android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="10dp">
 
@@ -237,11 +235,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15sp"
                         android:text="你為什麼吸菸？"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -257,34 +255,34 @@
                         android:id="@+id/stimulate_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15sp"
                         android:text="刺激感"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/stimulate＿layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="45sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/stimulate_score"
                         android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*刺激感 */
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*刺激感 */
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -299,34 +297,34 @@
                         android:id="@+id/control_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15sp"
                         android:text="操控感"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/control_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="45sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/control_score"
                         android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*操控感 */
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*操控感 */
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -341,34 +339,34 @@
                         android:id="@+id/relax_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15sp"
                         android:text="愉悅/放鬆感"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/relax_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="30sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
+                        android:id="@+id/relax_score"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/relax_score"
-                        android:text="分"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
+                        android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*愉悅/放鬆感 */
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*愉悅/放鬆感 */
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -383,34 +381,34 @@
                         android:id="@+id/emotional＿support_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15sp"
                         android:text="精神支柱"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/emotional＿support_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="45sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/emotional＿support_score"
                         android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*精神支柱 */
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*精神支柱 */
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -425,34 +423,34 @@
                         android:id="@+id/desire_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15sp"
                         android:text="心理上成癮"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/desire_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="45sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/desire_score"
                         android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="分"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:gravity="right"
+                        android:singleLine="true"
+                        android:text="分"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*心理上成癮 */
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*心理上成癮 */
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -467,56 +465,56 @@
                         android:id="@+id/habits_for"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15sp"
                         android:text="習慣性"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/habitual_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="45sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/habits_score"
                         android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*習慣性 */
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*習慣性 */
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="530sp"
+                android:layout_height="600sp"
                 android:layout_margin="10sp"
                 android:layout_marginTop="16dp"
-                android:orientation="vertical"
                 android:background="@drawable/border"
+                android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="10dp">
 
-                    <TextView
-                        android:id="@+id/explan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15sp"
-                        android:text="  若以上幾項得分超過11分或更高,表示此項為你的滿足感來源："
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                       />
+                <TextView
+                    android:id="@+id/explan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:text="  若以上各項的得分若超過11分表示您吸菸的原因為該項因素："
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan1"
                     android:layout_width="wrap_content"
@@ -524,8 +522,8 @@
                     android:layout_marginLeft="15sp"
                     android:text="1. 刺激感：表示你需要以香菸刺激自己,認為香菸可以讓你更清醒、重整活力。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan2"
                     android:layout_width="wrap_content"
@@ -533,8 +531,8 @@
                     android:layout_marginLeft="15sp"
                     android:text="2. 操控感：對事情有主控權令你有滿足感。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan3"
                     android:layout_width="wrap_content"
@@ -542,8 +540,8 @@
                     android:layout_marginLeft="15sp"
                     android:text="3. 愉悅/放鬆感：認為可以從吸菸中獲得實際、真正的愉悅感。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan4"
                     android:layout_width="wrap_content"
@@ -551,26 +549,25 @@
                     android:layout_marginLeft="15sp"
                     android:text="4. 精神支柱：遇到壓力或不舒服，利用香菸當作一種精神支柱。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15sp"
-                    android:text="5. 對香菸有很強烈的依賴感。"
+                    android:text="5. 依賴性：對香菸有很強烈的依賴感。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15sp"
-                    android:text="6. 因為習慣性而吸菸。"
+                    android:text="6. 習慣性：因為習慣性而吸菸。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -579,8 +576,8 @@
                 android:layout_height="360sp"
                 android:layout_margin="10sp"
                 android:layout_marginTop="16dp"
-                android:orientation="vertical"
                 android:background="@drawable/border"
+                android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="10dp">
 
@@ -596,11 +593,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15sp"
                         android:text="戒菸指數"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -613,39 +610,39 @@
                     app:layout_constraintTop_toTopOf="parent"
                     tools:layout_editor_absoluteX="10dp">
 
-                <TextView
-                    android:id="@+id/sumaei_layout_forhealth"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="為了健康："
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/sumaei_layout_forhealth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10sp"
+                        android:text="為了健康："
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp" />
 
-                <TextView
-                    android:id="@+id/sumaei_layout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40sp"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    />
+                    <TextView
+                        android:id="@+id/sumaei_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp" />
 
-                <TextView
-                    android:id="@+id/sumaei_layout_score"
-                    android:layout_width="0dp"
-                    android:singleLine="true"
-                    android:gravity="right"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="35sp"
-                    android:text="分"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"/>
-                </LinearLayout>/*為了健康 */
+                    <TextView
+                        android:id="@+id/sumaei_layout_score"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="分"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*為了健康 */
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -660,35 +657,35 @@
                         android:id="@+id/sumbfj_layout_forexample"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10sp"
                         android:text="為了典範："
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/sumbfj_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="40sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/sumbfj_layout_score"
                         android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="35sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*為了典範 */
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*為了典範 */
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -703,35 +700,35 @@
                         android:id="@+id/sumcgk_layout_forpretty"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10sp"
                         android:text="為了美感："
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/sumcgk_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="40sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/sumcgk_layout_score"
                         android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="35sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*為了美感 */
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*為了美感 */
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -746,35 +743,35 @@
                         android:id="@+id/sumdhl_layout_forcontrol"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10sp"
                         android:text="為了控制："
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/sumdhl_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="40sp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:id="@+id/sumdhl_layout_score"
                         android:layout_width="0dp"
-                        android:singleLine="true"
-                        android:gravity="right"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="35sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
                         android:text="分"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="25sp"
-                        android:layout_gravity="center"/>
-                </LinearLayout>/*為了控制 */
+                        android:textSize="25sp" />
+                </LinearLayout>
+                /*為了控制 */
 
 
             </LinearLayout>
@@ -784,8 +781,8 @@
                 android:layout_height="450sp"
                 android:layout_margin="10sp"
                 android:layout_marginTop="16dp"
-                android:orientation="vertical"
                 android:background="@drawable/border"
+                android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="10dp">
 
@@ -796,8 +793,8 @@
                     android:layout_marginLeft="15sp"
                     android:text="  若以上幾項得分超過9分或更高,表示此項為你最想戒菸的原因："
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan2.2"
                     android:layout_width="wrap_content"
@@ -805,8 +802,8 @@
                     android:layout_marginLeft="15sp"
                     android:text="1. 健康：一想到吸菸對健康的危害，你就會很想馬上戒菸。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan2.3"
                     android:layout_width="wrap_content"
@@ -814,8 +811,8 @@
                     android:layout_marginLeft="15sp"
                     android:text="2. 典範：想要給其他人建立一個良好的典範。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan2.4"
                     android:layout_width="wrap_content"
@@ -823,8 +820,8 @@
                     android:layout_marginLeft="15sp"
                     android:text="3. 美感： 知道吸菸會帶來不愉悅的困擾，像是牙齒焦黃、呼吸有臭味"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
+
                 <TextView
                     android:id="@+id/explan2.5"
                     android:layout_width="wrap_content"
@@ -832,8 +829,7 @@
                     android:layout_marginLeft="15sp"
                     android:text="4. 控制感： 表示你會無法控制吸菸而感到困擾，如果你有意願挑戰自己，會使你想要戒菸。"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp"
-                    />
+                    android:textSize="25sp" />
 
             </LinearLayout>
 
